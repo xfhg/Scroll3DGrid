@@ -1,0 +1,21 @@
+{
+  "name": "scroll-3d-grid-nuxt",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "preview": "nuxi preview"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "imagesloaded": "^5.0.0",
+    "lenis": "^1.3.11",
+    "nuxt": "^3.13.2"
+  },
+  "devDependencies": {
+    "sass": "^1.77.6",
+    "typescript": "^5.4.5"
+  }
+}
