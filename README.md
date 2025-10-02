@@ -1,31 +1,33 @@
-# On-Scroll 3D Grid Animations
+# On-Scroll 3D Grid Animations (Nuxt)
 
-On-scroll animations for perspective image grids with different layouts.
+A Nuxt 4-ready recreation of the Codrops "On-Scroll 3D Grid Animations" demo using Vue single-file components, GSAP, ScrollTrigger, and Lenis. The repository ships a drop-in component plus a showcase page wired into Nuxt so you can `npm install` and start the demo immediately.
 
 ![On-Scroll 3D Grid Animations](https://tympanus.net/codrops/wp-content/uploads/2023/08/onscroll3dgrid.jpg)
 
-[Article on Codrops](https://tympanus.net/codrops/?p=73075)
+## Getting started
 
-[Demo](http://tympanus.net/Development/Scroll3DGrid/)
+```bash
+npm install
+npm run dev
+```
 
-## Installation
+- Visit `http://localhost:3000` to explore the demo.
+- Run `npm run build` to generate a production build.
+- Run `npm run preview` to preview the production build locally.
 
-Run this demo on a [local server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/set_up_a_local_testing_server).
+## Project structure
+
+- `components/Scroll3DGridDemo.vue` – Vue component that renders the grids and wires up GSAP, ScrollTrigger, Lenis, and the original animation flows.
+- `pages/index.vue` – Nuxt page using the component with meta tags and external font loading.
+- `plugins/gsap.client.ts` – Registers the ScrollTrigger plugin on the client.
+- `utils/` – Shared helpers for preloading images and working with grid subsets.
+- `assets/css/base.css` – Original Codrops styling imported globally via Nuxt.
+- `public/img` – Static images used in the grids.
 
 ## Credits
 
-- Images generated with [Midjourney](https://midjourney.com)
-
-## Misc
-
-Follow Codrops: [Twitter](http://www.twitter.com/codrops), [Facebook](http://www.facebook.com/codrops), [GitHub](https://github.com/codrops), [Instagram](https://www.instagram.com/codropsss/)
+Original demo by [Codrops](https://tympanus.net/codrops/). Images were generated with [Midjourney](https://midjourney.com).
 
 ## License
+
 [MIT](LICENSE)
-
-Made with :blue_heart:  by [Codrops](http://www.codrops.com)
-
-
-
-
-
